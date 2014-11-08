@@ -66,6 +66,8 @@ except KeyError:
     pass
 
 send_text(msg)
+
+
 '''
 print("Day: 1")
 print(day['weather'][0]['description']) #clear, cloudy, etc
@@ -76,15 +78,4 @@ print("Temp Max: ", round(day['temp']['max']-273.15, 1),"degrees C")
 print("Humidity: ", day['humidity'],"%")
 print("Wind Speed:", day['speed'], "m/s")
 print()
-
-
-scheduler = sched.scheduler(time.time, time.sleep)
-
-def scheduler_run():
-    scheduler.enter(0, 1, mainProg, ())
-    scheduler.run()
-    time.sleep(300)
-
-for i in range(100):
-    scheduler_run()
 '''
